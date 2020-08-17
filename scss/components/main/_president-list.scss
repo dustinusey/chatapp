@@ -1,0 +1,61 @@
+.president-list {
+    text-align: center;
+    overflow: auto;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+        & h1 {
+            font-size: 18px;
+        }
+        & .presidents {
+            overflow: auto;
+                & ul {
+                    height: auto;
+                    overflow: auto;
+                        & li {
+                            margin-left: 20px;
+                            @include flex(row, nowrap, flex-start, center);
+                            background: rgba(128, 128, 128, 0.096);
+                            margin: 6px 10px;
+                            padding: 5px;
+                            border-radius: 50px;
+                            cursor: pointer;
+                            transition: .2s;
+                                &:hover {
+                                    background: rgba(128, 128, 128, 0.15);
+                                }
+                                 & p {
+                                     margin-left: 10px;
+                                     font-size: 14px;
+                                     pointer-events: none;
+                                 }
+                        }
+                }
+        }
+}
+.divider {
+    margin: 25px auto;
+    width: 35%;
+    border: 1px solid rgba(128, 128, 128, 0.281);
+}
+.status {
+    margin-left: 5px;
+    border-radius: 50%;
+    @include size(12px, 12px);
+    pointer-events: none;
+}
+.online {
+    background: $online;
+}
+.away {
+    background: $away;
+}
+.idle {
+    background: $idle;
+}
+
+
+
+.active {
+    background: rgba(lighten($text, 20%), 0.8)!important;
+    color: white!important;
+}

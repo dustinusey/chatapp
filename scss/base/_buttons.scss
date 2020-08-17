@@ -1,0 +1,15 @@
+button {
+    width: 80px;
+    height: 90%;
+    background: $online;
+    color: white;
+    border-radius: 8px;
+    border: 2px solid white;
+    transition: .3s;
+    cursor: pointer;
+    opacity: .4;
+    pointer-events: none;
+        &:hover {
+            background: darken($online, 10%);
+        }
+}

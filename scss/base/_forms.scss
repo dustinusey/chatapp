@@ -1,0 +1,6 @@
+form {
+    @include flex(row, nowrap, center, center);
+    width: 100%;
+    height: 100%;
+    position: relative;
+}

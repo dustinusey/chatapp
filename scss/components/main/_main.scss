@@ -1,0 +1,29 @@
+main {
+    padding: 12px;
+    display: grid;
+    grid-template-columns: 265px 1fr;
+    grid-template-rows: 1fr 60px;
+    grid-template-areas: 
+    "presList chatUI"
+    "presList msgFld";
+    min-height: 475px;
+}
+.president-list {
+    grid-area: presList;
+    margin-right: 15px!important;
+    max-height: 625px;
+}
+.chat-ui {
+    grid-area: chatUI;
+}
+.message-field {
+    grid-area: msgFld;
+    padding: 0 5px!important;
+}
+.panel {
+    background: white;
+    margin: 8px;
+    border-radius: 8px;
+    box-shadow: $bs;
+    padding: 10px;
+}

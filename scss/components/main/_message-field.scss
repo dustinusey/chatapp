@@ -1,0 +1,3 @@
+.message-field {
+    @include flex(row, nowrap, flex-start, center);
+}

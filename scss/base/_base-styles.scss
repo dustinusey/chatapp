@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        &::selection {
+            background: transparent;
+        }
+}
+
+button, input, textarea {
+    outline: none;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* -- scrollbar stylings --*/ 
+
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(59, 59, 59, 0.1);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: $header;
+    border-radius: 20px;
+    border: 1px solid rgba(204, 204, 204, 0.247);
+  }
+
+  body {
+      @include size(100vh, 100%);
+      @include flex(column, nowrap, center, center);
+      overflow: hidden;
+      background: $bg;
+      color: $text;
+      font-family: 'Varela Round', sans-serif;
+  }
+  .pe {
+      pointer-events: none;
+  }
+  

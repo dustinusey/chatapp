@@ -1,0 +1,38 @@
+$bg: #70C0D1;
+
+$online: #94F6D3;
+$idle: #FCD7A1;
+$away: #CFD8D4;
+
+
+$window-1: #FF8A8A;
+$window-2: #E5C46E;
+$window-3: #98DEC5;
+
+$container: #D9E3E5;
+$content-bg: white;
+
+$header: #78828C;
+
+$text: #495359;
+$send: #75E0C0;
+
+
+$bs: 0 4px 4px rgba(0, 0, 0, 0.15);
+$br-sm: 5px;
+$br-lg: 10px;
+$br-round: 50%;
+
+
+$center: center;
+$fs: flex-start;
+$fe: flex-end;
+$sb: space-between;
+$sa: space-around;
+$se: space-evenly;
+
+$buttons: (
+	window1: $window-1,
+	window2: $window-2,
+	window3: $window-3
+);

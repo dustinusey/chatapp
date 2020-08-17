@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FA6 Icons Import -->
+    <script src="https://kit.fontawesome.com/6e358658ed.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- fav icon -->
+    <link rel="icon" type="image/png" href="./img/fav.png" sizes="32x32">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <title>ChatApp</title>
+</head>
+<body>
+    <section class="chatapp-container">
+        <header>
+            <div class="window-div">
+                <div class="window1"></div>
+                <div class="window2"></div>
+                <div class="window3"></div>
+            </div>
+            <div class="status-options-div">
+                <ul>
+                    <li>Online</li>
+                    <li>Away</li>
+                </ul>
+            </div>
+            <div class="status-div">
+                <div class="status-icon pe"></div>
+                <p class="pe">Online</p>
+                <i class="pe fas fa-chevron-down"></i>
+            </div>
+        </header>
+        <main>
+            <div class="president-list panel">
+                <h1>Start Chatting</h1>
+                <div class="presidents">
+                    <ul class="online-users">
+                        <!-- dynamic list of online users -->
+                    </ul>
+                    <hr class="divider">
+                    <ul class="other-users">
+                        <!-- dynamic list of users not online -->
+                </ul>
+                </div>
+                
+               
+            </div>
+            <!-- / PRESIDENT LIST -->
+            <div class="chat-ui panel">
+                <!-- dynamically generated messages -->
+            </div>
+            <!-- / CHAT-UI -->
+            <div class="message-field panel">
+                <form action="">
+                    <input type="text" placeholder="Type your message...">
+                    <button>Send</button>
+                </form>
+            </div>
+            <!-- / MESSAGE-FIELD -->
+        </main>
+    </section>
+    <footer>
+        <p>Developed by Dustin Usey</p>
+    </footer>
+    
+
+    <script src="./js/func.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
